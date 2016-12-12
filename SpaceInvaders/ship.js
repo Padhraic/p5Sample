@@ -20,7 +20,8 @@ function Ship(){
   }
 
   this.move = function(){
-    this.x += this.xdir;
+    this.x += this.xdir * 5;
+    this.x = constrain(this.x, 0, width);
   }
 
 }
